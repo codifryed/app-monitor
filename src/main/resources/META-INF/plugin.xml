@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.guyboldon.appmonitor</id>
+    <name>App Monitor</name>
+    <version>${project.version}</version>
+    <vendor url="https://github.com/codifryed/app-monitor/issues">
+        Guy Boldon
+    </vendor>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Box7 Monitor" anchor="right"
+                    factoryClass="com.guyboldon.appmonitor.AppMonitorToolWindowFactory"
+                    icon="AllIcons.Toolwindows.ToolWindowTodo"/>
+    </extensions>
+
+    <actions>
+        <group id="AppMonitor.Toolbar" description="AppMonitor toolwindow toolbar">
+            <action id="AppMonitor.Reload" description="Refresh server list"
+                    class="com.guyboldon.appmonitor.RefreshAction"
+                    icon="AllIcons.Actions.Refresh" text="Refresh Server List"/>
+        </group>
+    </actions>
+</idea-plugin>
