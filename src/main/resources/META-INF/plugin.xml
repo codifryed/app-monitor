@@ -11,7 +11,7 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="Box7 Monitor" anchor="right"
+        <toolWindow id="App Monitor" anchor="right"
                     factoryClass="com.guyboldon.appmonitor.AppMonitorToolWindowFactory"
                     icon="AllIcons.Toolwindows.ToolWindowTodo"/>
     </extensions>
